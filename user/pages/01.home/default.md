@@ -1,6 +1,6 @@
 ---
-title: Home
-body_classes: title-center title-h1h2
+title: 'Rosetree Floral Design - Events, Weddings and Flower Arrangements'
+body_classes: 'title-center title-h1h2'
 ---
 
 # Say Hello to Grav!
