@@ -1,3 +1,5 @@
+{% extends 'partials/base.html.twig' %}
+
 {% for module in page.collection() %}
     {{ module.content }}
 {% endfor %}
