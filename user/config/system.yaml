@@ -22,7 +22,7 @@ home:
   alias: /home
   hide_in_urls: false
 pages:
-  theme: haywire
+  theme: bootstrap4
   order:
     by: default
     dir: asc

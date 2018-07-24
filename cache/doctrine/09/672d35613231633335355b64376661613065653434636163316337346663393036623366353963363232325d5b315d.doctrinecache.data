@@ -1,0 +1,53 @@
+1532991517
+a:2:{s:7:"content";s:5406:"<div class="container-fluid pb-3">
+    <div class="row pb-4">
+        <div class="col-12 col-xl-6">
+            <h1 class="heading text-center font-weight-bold">Designers Choice Arrangement</h1>
+        </div>
+        <div class="col-12 col-xl-6"></div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-xl-6 pb-5">
+        <div class="gallery-container ">
+            <div id="unite-gallery" style="display:none;">
+<img alt="" data-description="" src="/images/2/b/3/4/2/2b342fb9c618bbb1dafbdfc56792ece7885ad82c.jpg" data-image="/user/pages/03.shop/designers-choice-arrangement/designers-choice-arrangement-001-min.jpg">
+<img alt="" data-description="" src="/images/c/d/b/3/b/cdb3be51edbeea08c8cc570138fcdb9f0a62b59d.jpg" data-image="/user/pages/03.shop/designers-choice-arrangement/designers-choice-arrangement-002-min.jpg">
+<img alt="" data-description="" src="/images/6/7/8/9/b/6789b519f7f0b9d20187c6c5047d83cf13e15cd5.jpg" data-image="/user/pages/03.shop/designers-choice-arrangement/designers-choice-arrangement-003-min.jpg">
+<img alt="" data-description="" src="/images/6/2/2/4/5/622452d2cf8755e3d47e770960d5831f221f02fb.jpg" data-image="/user/pages/03.shop/designers-choice-arrangement/designers-choice-arrangement-004-min.jpg">
+<img alt="" data-description="" src="/images/2/e/8/1/c/2e81c43e6409822bc2dbe47f683bd6e7e3632282.jpg" data-image="/user/pages/03.shop/designers-choice-arrangement/designers-choice-arrangement-005-min.jpg">
+<img alt="" data-description="" src="/images/c/9/7/c/a/c97cac85ba11b360dac3c08c61a157b481a17872.jpg" data-image="/user/pages/03.shop/designers-choice-arrangement/designers-choice-arrangement-006-min.jpg">
+<img alt="" data-description="" src="/images/8/b/6/2/5/8b625939054e4a35b76bd485435967341dbf83ea.jpg" data-image="/user/pages/03.shop/designers-choice-arrangement/designers-choice-arrangement-007-min.jpg">
+<img alt="" data-description="" src="/images/a/1/0/f/9/a10f95099862f30e1eb89ca3c0b3b89b8c8ba1ef.jpg" data-image="/user/pages/03.shop/designers-choice-arrangement/designers-choice-arrangement-008-min.jpg">
+<img alt="" data-description="" src="/images/2/d/e/4/3/2de43e54baed32b56038e3601cf4e074876870f1.jpg" data-image="/user/pages/03.shop/designers-choice-arrangement/designers-choice-arrangement-009-min.jpg">
+</div>
+<script type="text/javascript">
+              jQuery(document).ready(function(){
+                jQuery("#unite-gallery").unitegallery({"gallery_theme":"tiles","tiles_type":"justified","tiles_justified_row_height":"200"});
+              });
+        </script>
+
+        </div>
+        </div>
+        <div class="col-12 col-xl-6">
+            <p class="font-weight-bold">Minimum Price: $35.00</p>
+            <p>Let our designers get creative and make something amazing for you. All our designer choice arrangements are made to give you a beautiful Rosetree experience with premium flowers and pretty greenery.</p>
+            <h5>Set Your Price</h5>
+            <p>What does that mean? That means you can set your own price. Want a small arrangement yet still beautiful, set it for the minimum. Thinking you would like to make it a little bigger, little fuller, little prettier, add a few more dollars. Wants something really big and extravagant, set your price higher. You set the price to match the occasion and your needs, we will make it look the best your price can be.</p>
+            <h5>Delivery or Pickup</h5>
+            <p>On this product we only offer local delivery or local pickup. We deliver to Waco and its surrounding areas. Here is a list of zip codes we deliver to: 76708, 76707, 76701, 76710, 76711, 76712, 76706, 76643, 76705, 76704, 76640, 76633, 76655, 76657. Local pickups will be available inside Spice Village at 213 Mary Ave Waco, TX 76701 between the hours of 10am and 6pm Monday thru Friday. Go to the front desk of Spice Village and give them the name that you place the order under. Here are our Delivery Terms.</p>
+            <p>* Pictures are not of the actual flower arrangement you will get but are recent examples of what we send out. Your arrangement will be designed the day you order is to be delivered with fresh flowers and greenery. We can’t customize online for specific flower or colors but we can guarantee that your flower arrangement will be just as pretty as the ones in the pictures.</p>
+
+            <form id="productForm" name="productForm">
+              <label class="col col-form-label col-form-label-lg">Set Your Price</label>
+                <small class="text-muted col">
+                  Minimum Price: $35.00
+                </small>
+              <div class="form-group row pl-4">
+            <input type="number" class="col form-control" min="35" max="500" id="price numberSize validationCustom01" name="price" value="35" onchange="(!validity.rangeOverflow||(value=500)) && (!validity.rangeUnderflow||(value=35)) &&
+            (!validity.stepMismatch||(value=parseInt(this.value))); return validateForm()">
+            <button type="button" id="okButton" class="col btn btn-primary rounded snipcart-add-item ml-2" data-item-id="2" data-item-name="Designer's Choice Arrangement" data-item-price="35.00" data-item-url="http://18.219.29.57/shop/products/designers-choice-arrangement" data-item-description="Designer's Choice Arrangement - Premium Flowers and Greenery">Add To Cart</button>
+              </div>
+            </form>
+        </div>
+    </div>
+</div>";s:12:"content_meta";a:1:{s:19:"unitegallery_assets";a:2:{s:2:"js";a:2:{i:0;s:64:"plugin://unitegallery/vendor/unitegallery/js/unitegallery.min.js";i:1;s:72:"plugin://unitegallery/vendor/unitegallery/themes/tiles/ug-theme-tiles.js";}s:3:"css";a:2:{i:0;s:63:"plugin://unitegallery/vendor/unitegallery/css/unite-gallery.css";i:1;s:73:"plugin://unitegallery/vendor/unitegallery/themes/tiles/ug-theme-tiles.css";}}}}

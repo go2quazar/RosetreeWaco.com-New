@@ -1,0 +1,47 @@
+1532902958
+a:2:{s:7:"content";s:4228:"<div class="container-fluid pb-3">
+    <div class="row pb-4">
+        <div class="col-12 col-xl-6">
+            <h1 class="heading text-center font-weight-bold">Premium Vase Arrangement</h1>
+        </div>
+        <div class="col-12 col-xl-6"></div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-xl-6 pb-5">
+        <div class="gallery-container ">
+            <div id="unite-gallery" style="display:none;">
+<img alt="" data-description="" src="/images/4/7/1/0/9/4710979fcadc3ffaad39748940ce86aaceb4b2cd.jpg" data-image="/user/pages/03.shop/premium-vase-arrangement/premium-vase-arrangement-001-min.jpg">
+<img alt="" data-description="" src="/images/8/b/d/e/3/8bde367e1aff06882083412766d61c627ead49ca.jpg" data-image="/user/pages/03.shop/premium-vase-arrangement/premium-vase-arrangement-002-min.jpg">
+<img alt="" data-description="" src="/images/b/1/f/8/9/b1f89f34503246c45ad2b1a88ddf69ec1a1722f8.jpg" data-image="/user/pages/03.shop/premium-vase-arrangement/premium-vase-arrangement-003-min.jpg">
+<img alt="" data-description="" src="/images/8/9/3/b/e/893beb4e6ddba2c0c944d199ea198bd42f5e8bc8.jpg" data-image="/user/pages/03.shop/premium-vase-arrangement/premium-vase-arrangement-004-min.jpg">
+</div>
+<script type="text/javascript">
+              jQuery(document).ready(function(){
+                jQuery("#unite-gallery").unitegallery({"gallery_theme":"tiles","tiles_type":"justified","tiles_justified_row_height":"200"});
+              });
+        </script>
+
+        </div>
+        </div>
+        <div class="col-12 col-xl-6">
+            <p class="font-weight-bold">Minimum Price: $60.00</p>
+            <p>We have over 30 different vases and continually rotate our stock so you get something unique and beautiful every time. Every arrangement is designed to accent the vase and give you flowers you will never forget.</p>
+            <h5>Set Your Price</h5>
+<p>What does that mean? That means you can set your own price. Want something small yet still beautiful, set it for the minimum. Thinking you would like to make it a little bigger, little fuller, little prettier, add a few more dollars. Wants something really big and extravagant, set your price higher. You set the price to match the occasion and your needs, we will make it look the best your price can be.</p>
+<h5>Delivery or Pickup</h5>
+<p>On this product we only offer local delivery or local pickup. We deliver to Waco and its surrounding areas. Here is a list of zip codes we deliver to: 76708, 76707, 76701, 76710, 76711, 76712, 76706, 76643, 76705, 76704, 76640, 76633, 76655, 76657. Local pickups will be available inside Spice Village at 213 Mary Ave Waco, TX 76701 between the hours of 10am and 6pm Monday thru Friday. Go to the front desk of Spice Village and give them the name that you place the order under. Here are our Delivery Terms.</p>
+<p>* Pictures are not of the actual product you will get but are recent examples of what we send out. Your product will be designed the day you order and will be delivered fresh. We can’t customize online for specifics or colors but we can guarantee that your product will be just as pretty as the ones in the pictures.</p>
+            <form id="productForm" name="productForm">
+              <label class="col col-form-label col-form-label-lg">Set Your Price</label>
+                <small class="text-muted col">
+                  Minimum Price: $60.00
+                </small>
+              <div class="form-group row pl-4">
+            <input type="number" class="col form-control" min="60" max="500" id="numberSize validationCustom01" name="price" value="60" onchange="(!validity.rangeOverflow||(value=500)) && (!validity.rangeUnderflow||(value=35)) &&
+            (!validity.stepMismatch||(value=parseInt(this.value))); return validateForm()">
+            <button type="button" id="okButton" class="col btn btn-primary rounded snipcart-add-item ml-2" data-item-id="PVA" data-item-name="Premium Vase Arrangement" data-item-price="60.00" data-item-url="http://18.219.29.57/shop/premium-vase-arrangement" data-item-description="Premium Flowers and Greenery in a beautiful and unique vase.">Add To Cart</button>
+              </div>
+            </form>
+        </div>
+    </div>
+</div>";s:12:"content_meta";a:1:{s:19:"unitegallery_assets";a:2:{s:2:"js";a:2:{i:0;s:64:"plugin://unitegallery/vendor/unitegallery/js/unitegallery.min.js";i:1;s:72:"plugin://unitegallery/vendor/unitegallery/themes/tiles/ug-theme-tiles.js";}s:3:"css";a:2:{i:0;s:63:"plugin://unitegallery/vendor/unitegallery/css/unite-gallery.css";i:1;s:73:"plugin://unitegallery/vendor/unitegallery/themes/tiles/ug-theme-tiles.css";}}}}

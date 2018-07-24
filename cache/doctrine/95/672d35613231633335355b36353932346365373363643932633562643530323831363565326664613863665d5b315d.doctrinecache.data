@@ -1,0 +1,239 @@
+1532934674
+a:2:{s:7:"content";s:17609:"<div class="container-fluid pl-0 pt-0 pr-0 pb-5 parallax">
+    <div class="row">
+        <div class="col-lg-8"><img class="img-fluid" src="user/images/getting-married.jpg"></div>
+        <div class="col-lg-4 pl-5 pr-5 pb-5 text-center">
+            <h1 class="display-3 pb-5 handwritten">Getting Married?</h1>
+            <p class="lead">Wedding flowers can be intimidating. There are so many flower options and styles.</p>
+            <hr class="my-4">
+            <p>Let us walk through you through everything we have to offer.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="/weddings" role="button">Learn more</a>
+            </p>
+            <hr class="my-4">
+            <div class="grav-vimeo"><iframe src="//player.vimeo.com/video/272694452" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        </div>
+    </div>
+</div>
+<div class="box"></div>
+<div class="parallax">
+    <div class="d-none d-lg-block d-xl-block dark-box">
+        <div class="p-5 handwritten"><p class="display-4">WE ARE LOCATED IN BEAUTIFUL WACO TEXAS BUT WE WILL TRAVEL TO YOU FOR YOUR WEDDING OR EVENT</p></div>
+    </div>
+    <div class="d-block d-lg-none d-xl-none dark-box-sm">
+        <div class="p-5 handwritten"><p class="h2">WE ARE LOCATED IN BEAUTIFUL WACO TEXAS BUT WE WILL TRAVEL TO YOU FOR YOUR WEDDING OR EVENT</p></div>
+    </div>
+</div>
+<div class="container-fluid p-5">
+    <div class="row">
+        <div class="col-lg-3 pb-5">
+            <div class="card border-light">
+                <h5 class="card-title border border-gray rounded text-center h2">Weddings</h5>
+                <img class="card-img-top" src="user/images/wedding-flowers.jpg" alt="Wedding Flowers">
+                <div class="card-body">
+                    <p class="card-text">Every wedding is different, from simple to extravagant, but they have one thing in common. They are important to you. They are the beginning of your life together as husband and wife. We work with you to provide you with what you are dreaming of for your special day with flowers and much more.</p>
+                    <p class="card-text">We are located in Waco, TX but will travel to you for your wedding. Schedule a consult today.</p>  
+                    <a href="#" class="btn btn-primary">Free Consult</a>
+                </div>
+            </div>
+    </div>
+    <div class="col-lg-3 pb-5">
+            <div class="card border-light">
+                <h5 class="card-title border border-gray rounded text-center h2">Events</h5>
+                <img class="card-img-top" src="user/images/events.jpg" alt="Events">
+                <div class="card-body">
+                    <p class="card-text">Trust us to make your party or event one to remember. With fabulous flower arrangements, tablescapes, centerpieces, candlelight and rentals.</p>
+                    <p class="card-text">Schedule a consult today to go over the details of your event.</p>  
+                    <a href="#" class="btn btn-primary">Free Consult</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 pb-5">
+            <div class="card border-light">
+                <h5 class="card-title border border-gray rounded text-center h2">Everyday Arrangements</h5>
+                <img class="card-img-top" src="user/images/flower-arrangements.jpg" alt="Flower Arrangements">
+                <div class="card-body">
+                    <p class="card-text">We specialize in quality unique flower arrangements that you can enjoy any day and everyday, not just special occasions. From rustic to elegant, country to classical or simple to extravagant. We make it our mission to make every flower arrangement extraordinary.</p>
+                    <a href="#" class="btn btn-primary">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 pb-5">
+            <div class="card border-light">
+                <h5 class="card-title border border-gray rounded text-center h2">Funerals</h5>
+                <img class="card-img-top" src="user/images/funerals.jpg" alt="Funerals">
+                <div class="card-body">
+                    <p class="card-text">Choosing flowers for a loved one’s funeral is something no one wants to do. We help you through this difficult time with compassion. We pay attention to the details that express your loved one’s personality and bring honor to their memory.</p>
+                    <a href="#" class="btn btn-primary">Funeral Options</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="parallax">
+    <div class="d-none d-lg-block d-xl-block dark-box">
+        <div class="p-5 handwritten"><p class="display-4">WE WORK WITH EVERY CLIENT TO PRODUCE <span class="font-weight-bold">UNIQUE, PERSONALIZED ARRANGEMENTS</span> AND BRING A REFINED FINISHING TO EACH EVENT.</p></div>
+    </div>
+    <div class="d-block d-lg-none d-xl-none dark-box-sm">
+        <div class="p-5 handwritten"><p class="h2">OUR TEAM WORKS WITH EVERY CLIENT TO PRODUCE <span class="font-weight-bold">UNIQUE, PERSONALIZED ARRANGEMENTS</span> AND BRING A REFINED FINISHING TO EACH EVENT.</p></div>
+    </div>
+</div>
+<div class="container-fluid" >
+  <div class="row">
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/the-knot-min.png" alt="The Knot">
+    </div>
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/7-centerpieces-min.png" alt="7 Centerpieces">
+    </div>
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/aisle-society-min.png" alt="Aisle Society">
+    </div>
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/bliss-bridal-magazine-min.png" alt="Bliss Bridal Magazine">
+    </div>
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/green-wedding-shoes-min.png" alt="Green Wedding Shoes">
+    </div>
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/magnolia-rouge-min.jpg" alt="Magnolia Rouge">
+    </div>
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/perfect-palette-min.png" alt="The Perfect Palette">
+    </div>
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/storyboard-weddings-min.png" alt="Storyboard Weddings">
+    </div>
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/style-me-pretty-min.jpg" alt="Style Me Pretty">
+    </div>
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/locals-love-us-2016-min.png" alt="Locals Love Us 2016 Winner">
+    </div>
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/locals-love-us-2014-min.png" alt="Locals Love Us 2014 Winner">
+    </div>
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/locals-love-us-2013-min.png" alt="Locals Love Us 2013 Winner">
+    </div>
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/locals-love-us-2012-min.png" alt="Locals Love Us 2012 Winner">
+    </div>
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/2014-wacoan-wedding-florist-min.png" alt="Wacoan Wedding Florist of the Year 2014">
+    </div>
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/2013-wacoan-wedding-florist-min.png" alt="Wacoan Wedding Florist of the Year 2013">
+    </div>
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/2012-wacoan-wedding-florist-min.png" alt="Wacoan Wedding Florist of the Year 2012">
+    </div>
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/2012-wacoan-florist-min.png" alt="Wacoan Florist of the Year 2012">
+    </div>
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/2011-wacoan-wedding-florist-min.png" alt="Wacoan Wedding Florist of the Year 2011">
+    </div>
+    <div class="col-lg-2 col-6 p-5">
+        <img src="user/images/2011-wacoan-florist-min.png" alt="Wacoan Florist of the Year 2011">
+    </div>
+  </div>
+</div>
+<div class="parallax">
+    <div class="d-none d-lg-block d-xl-block dark-box">
+        <div class="p-5 handwritten"><p class="display-4">SINCE 1983 WE’VE SPECIALIZED IN NATURAL, CREATIVE, UNIQUE ARRANGEMENTS UNLIKE ANY YOU CAN FIND ELSEWHERE.</p></div>
+    </div>
+    <div class="d-block d-lg-none d-xl-none dark-box-sm">
+        <div class="p-5 handwritten"><p class="h2">SINCE 1983 WE’VE SPECIALIZED IN NATURAL, CREATIVE, UNIQUE ARRANGEMENTS UNLIKE ANY YOU CAN FIND ELSEWHERE.</p></div>
+    </div>
+</div>
+<div class="container p-5">
+    <div class="p-5">
+        <h3 class="border border-gray rounded display-3 text-center">Our Team</h3>
+    </div>
+<div class="card-deck text-center">
+  <div class="card border-light">
+    <img class="card-img-top rounded-circle" src="user/images/jennifer-jones-min.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Jennifer Jones</h5>
+      <p class="card-text">Lead Designer and Owner</p>
+    </div>
+  </div>
+  <div class="card border-light">
+    <img class="card-img-top rounded-circle" src="user/images/kelly-jones-min.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Kelly Jones</h5>
+      <p class="card-text">Owner</p>
+    </div>
+  </div>
+    <div class="card border-light">
+    <img class="card-img-top rounded-circle" src="user/images/zaydra-jones-min.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Zaydra Jones</h5>
+      <p class="card-text">Designer</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="pb-5"></div>
+<section class="container p5 text-center">
+    <div class="p-5">
+        <h3 class="border border-gray rounded display-3">Our Work</h3>
+    </div>
+    <div class="gallery-container ">
+    <div id="unite-gallery" style="display:none;">
+<img alt="" data-description="" src="/images/4/7/f/0/6/47f06de06b75365f5f06670b0eb3a21d121f5c95.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-001-min.jpg">
+<img alt="" data-description="" src="/images/4/d/9/7/c/4d97caf28d70fba4fdcbf8ba0a9465268a0ee209.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-002-min.jpg">
+<img alt="" data-description="" src="/images/4/6/e/9/8/46e989bcbf2fbdf5625368c8ff59bfbf1b3e240f.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-003-min.jpg">
+<img alt="" data-description="" src="/images/7/9/f/c/b/79fcbd06e6dcb71ab755d0eb7e95d468971c6972.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-004-min.jpg">
+<img alt="" data-description="" src="/images/a/3/1/1/d/a311d721387f8457024ce9c3a454dd62121af53e.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-005-min.jpg">
+<img alt="" data-description="" src="/images/8/6/d/4/b/86d4b6b694ed5f48a73a4df51427d6267d1f9763.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-006-min.jpg">
+<img alt="" data-description="" src="/images/c/e/5/e/d/ce5edb6a3a24191186de2869a4eb7ddcb6b4c559.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-007-min.jpg">
+<img alt="" data-description="" src="/images/5/e/d/2/a/5ed2a51c30a6216656f407fe665f909cf7878700.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-008-min.jpg">
+<img alt="" data-description="" src="/images/2/d/b/3/7/2db37c4ddbbf8055cef6245ad261068264e2348d.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-009-min.jpg">
+<img alt="" data-description="" src="/images/4/5/e/6/c/45e6ce2714b5fe99d9f254a79ce5a4a9df5d15db.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-010-min.jpg">
+<img alt="" data-description="" src="/images/1/e/c/9/a/1ec9a684575eaa7f3c49f493fa7ba1e04964fafd.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-011-min.jpg">
+<img alt="" data-description="" src="/images/6/a/8/3/e/6a83eeca758a941a5e30e94a5713207794630ce3.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-012-min.jpg">
+<img alt="" data-description="" src="/images/5/e/9/a/4/5e9a4eca50b14f08d206ed5c5be409f0c42452c7.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-013-min.jpg">
+<img alt="" data-description="" src="/images/d/2/1/b/e/d21be0e61f3bfb5055290157086da5872a6ca727.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-014-min.jpg">
+<img alt="" data-description="" src="/images/f/e/a/c/8/feac864e4c01b0b42d5eb8028cb308cc2b6e4c90.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-015-min.jpg">
+<img alt="" data-description="" src="/images/c/b/1/8/4/cb184737d707c305975527a783353b5583d67c50.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-016-min.jpg">
+<img alt="" data-description="" src="/images/2/5/3/7/a/2537a8257b8a7367c6dc4f6d6af8d70eb201a10b.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-017-min.jpg">
+<img alt="" data-description="" src="/images/3/5/d/2/b/35d2b955c62de88f29331a54bf1f685ea52709fa.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-018-min.jpg">
+<img alt="" data-description="" src="/images/b/7/f/3/d/b7f3d84d6fc605d68c933f12d2cef2dbb8f4b6ea.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-019-min.jpg">
+<img alt="" data-description="" src="/images/6/8/a/8/7/68a87d13971fdee9ccae27e69b14f9b989607bda.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-020-min.jpg">
+<img alt="" data-description="" src="/images/7/8/2/8/1/78281f6347c0c3305f6293ab8909e4cef084a497.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-021-min.jpg">
+<img alt="" data-description="" src="/images/5/0/4/3/7/504370d2f940d2f7e5527b5fdbfb4aa00fcbfbdd.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-022-min.jpg">
+<img alt="" data-description="" src="/images/4/2/e/9/6/42e961f9b26465aaccdf367ac8226515b72c2d2c.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-023-min.jpg">
+<img alt="" data-description="" src="/images/e/b/6/2/0/eb62014d8de385b93d5e25293d7322dbb649444d.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-024-min.jpg">
+<img alt="" data-description="" src="/images/d/2/1/9/b/d219b5d9c5c27c55d13c853727535c3f60030640.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-025-min.jpg">
+<img alt="" data-description="" src="/images/3/2/c/c/f/32ccf7e104dbe18a3219eb535d14d812c88b1c20.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-026-min.jpg">
+<img alt="" data-description="" src="/images/c/a/e/d/0/caed058831d76e3f0de25138561f7071eb7e29ff.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-027-min.jpg">
+<img alt="" data-description="" src="/images/9/f/3/5/0/9f350f96c4e7d6e68a4c03379c062a20b7e2fb60.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-028-min.jpg">
+<img alt="" data-description="" src="/images/4/1/e/6/0/41e60d980ef8d459069a6a5b9be20ba4e2981dd3.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-029-min.jpg">
+<img alt="" data-description="" src="/images/9/f/2/a/2/9f2a2a845c2cdc3c4edeb3b08446daec37abec1b.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-030-min.jpg">
+<img alt="" data-description="" src="/images/8/b/1/e/8/8b1e898ff0702776a616ffb284198efce27ff357.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-031-min.jpg">
+<img alt="" data-description="" src="/images/b/2/5/b/7/b25b7b858d6858c16874f1bd3a66e72bdfad01e4.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-032-min.jpg">
+<img alt="" data-description="" src="/images/0/7/e/d/6/07ed695c719c8918b59bcf6963d39df3385ce933.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-033-min.jpg">
+<img alt="" data-description="" src="/images/2/f/f/6/c/2ff6c8424fd647d277bc05e57711cd9646b75a26.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-034-min.jpg">
+<img alt="" data-description="" src="/images/c/7/4/2/9/c742961bd59399616ed4c13d6207d3bf86614bad.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-035-min.jpg">
+<img alt="" data-description="" src="/images/0/8/a/d/8/08ad863f0d20eb01f49d3da4f0b61947acb52215.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-036-min.jpg">
+<img alt="" data-description="" src="/images/5/1/6/d/b/516db6e0e3d197617648deb756ec678110e0204b.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-037-min.jpg">
+<img alt="" data-description="" src="/images/b/4/8/5/3/b4853c7501b9b1b5f62bdbc7eb82bfc32d0da6be.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-038-min.jpg">
+<img alt="" data-description="" src="/images/b/3/a/e/0/b3ae0df1297537a7f2fab0f76dc84359bb7283df.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-039-min.jpg">
+<img alt="" data-description="" src="/images/a/7/1/4/0/a7140933d59cae64625cf2d236a572296e658ead.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-040-min.jpg">
+<img alt="" data-description="" src="/images/4/d/9/4/f/4d94f7c6edeb67f472929a999a20e04133e9bb4c.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-041-min.jpg">
+<img alt="" data-description="" src="/images/c/2/6/e/e/c26eee16df2c7aea8a4588b346946d0b9fa54feb.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-042-min.jpg">
+<img alt="" data-description="" src="/images/d/a/9/8/b/da98bfd46b55539b01993babeea5564f0d4ba754.jpg" data-image="/user/pages/01.home/wedding-flower-arrangements-043-min.jpg">
+</div>
+<script type="text/javascript">
+              jQuery(document).ready(function(){
+                jQuery("#unite-gallery").unitegallery({"gallery_theme":"tiles"});
+              });
+        </script>
+
+    </div>
+    <p class="p-5">
+    <a href="#" class="btn btn-primary btn-lg p-3">See More</a>
+    </p>
+</section>";s:12:"content_meta";a:1:{s:19:"unitegallery_assets";a:2:{s:2:"js";a:2:{i:0;s:64:"plugin://unitegallery/vendor/unitegallery/js/unitegallery.min.js";i:1;s:72:"plugin://unitegallery/vendor/unitegallery/themes/tiles/ug-theme-tiles.js";}s:3:"css";a:2:{i:0;s:63:"plugin://unitegallery/vendor/unitegallery/css/unite-gallery.css";i:1;s:73:"plugin://unitegallery/vendor/unitegallery/themes/tiles/ug-theme-tiles.css";}}}}
