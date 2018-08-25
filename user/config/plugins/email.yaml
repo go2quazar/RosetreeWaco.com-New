@@ -1,0 +1,15 @@
+enabled: true
+from: info@rosetreewaco.com
+to: info@rosetreewaco.com
+mailer:
+  engine: smtp
+  smtp:
+    server: localhost
+    port: 2525
+    encryption: tls
+    user: info@rosetreewaco.com
+    password: orch201d
+  sendmail:
+    bin: 'c:\XAMPP\sendmail\sendmail.exe\ -t'
+content_type: text/html
+debug: true

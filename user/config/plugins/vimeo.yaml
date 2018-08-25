@@ -1,0 +1,11 @@
+enabled: true
+plugin_css: true
+editor_button: true
+player_parameters:
+  autopause: true
+  autoplay: false
+  byline: true
+  color: '#00adef'
+  loop: false
+  portrait: true
+  title: true

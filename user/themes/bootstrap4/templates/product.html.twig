@@ -1,0 +1,202 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+     <div class="main-content">
+         <div class="container-fluid">
+           {% if config.plugins.breadcrumbs.enabled %}
+               {% include 'partials/breadcrumbs.html.twig' %}
+           {% endif %}
+           <div class="container-fluid pb-3">
+            <div class="row pb-4">
+                <div class="col-12 col-xl-6">
+                    <h1 class="heading text-center font-weight-bold">{{ page.header.product.name }}</h1>
+                </div>
+                <div class="col-12 col-xl-6"></div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-6 pb-5">
+                <div class="gallery-container {{ page.header.class }}">
+                    {{ unite_gallery(page.media.images, '{"gallery_theme":"' ~ page.header.unitegallery.gallery_theme ~ '", "tiles_type":"justified", "tiles_justified_row_height":"200"}') }}
+                </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <p class="font-weight-bold">Minimum Price: ${{ page.header.product.price }}</p>
+                    {{ page.header.product.description }}
+                    {% include 'include.html.twig' with {'page': page.find('/shop/product-details')} %}
+                    <form id="productForm" name="productForm">
+                    <div class="form-group row">
+                        <div class="col">
+                            <label for="price">Set Your Price</label>
+                            <input type="number" class="form-control" aria-describedby="priceHelp" min="{{ page.header.product.price }}" max="{{ page.header.product.maxPrice }}" step="1" id="price" name="price"
+                            {% if uri.query == true %}
+                            value="{{ uri.query('value') }}"
+                            {% else %}
+                            value="{{ page.header.product.price }}"
+                            {% endif %}
+                            onchange="(!validity.rangeOverflow||(value={{ page.header.product.maxPrice }})) && (!validity.rangeUnderflow||(value={{ page.header.product.price }})) &&
+                            (!validity.stepMismatch||(value=parseInt(this.value))); return validateForm()">
+                            <small class="form-text text-muted" id="priceHelp">
+                                  Minimum Price: ${{ page.header.product.price }}
+                            </small>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                            <div class="col">
+                                <div class="form-check">
+                                <input type="radio" name="deliveryPickup" class="form-check-input" value="delivery" id="delivery" onchange="return validateForm()" checked>
+                                <label class="form-check-label" for="delivery">Delivery $8.00</label>
+                                </div>
+                                <div class="form-check">
+                                <input type="radio" name="deliveryPickup" class="form-check-input" value="pickup" id="pickup" onchange="return validateForm()">
+                                <label class="form-check-label" for="pickup">Pickup (Free)</label>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col">
+                            <label id="nameLabel" for="recipientsName">Recipients Name</label>
+                            <input type="text" class="form-control" id="recipientsName" aria-describedby="nameHelp" onchange="return validateForm()">
+                            <small class="form-text text-muted" id="nameHelp">
+                            </small>
+                        </div>
+                        <div id="address" class="col">
+                            <label for="recipientsAddress">Recipients Address</label>
+                            <textarea rows="3" class="form-control" id="recipientsAddress" onchange="return validateForm()"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div id="city" class="col">
+                            <label for="recipientsCity">City</label>
+                            <input type="text" class="form-control" id="recipientsCity" onchange="return validateForm()">
+                        </div>
+                        <div id="zip" class="col">
+                            <label for="recipientsZip">Zip</label>
+                            <select class="form-control" name="recipientsZip" id="recipientsZip" aria-describedby="zipHelp" onchange="return validateForm()">
+                              <option value="" disabled selected>Select Zip</option>
+                              <option value="76633">76633</option>
+                              <option value="76640">76640</option>
+                              <option value="76643">76643</option>
+                              <option value="76655">76655</option>
+                              <option value="76657">76657</option>
+                              <option value="76701">76701</option>
+                              <option value="76704">76704</option>
+                              <option value="76705">76705</option>
+                              <option value="76706">76706</option>
+                              <option value="76707">76707</option>
+                              <option value="76708">76708</option>
+                              <option value="76710">76710</option>
+                              <option value="76711">76711</option>
+                              <option value="76712">76712</option>
+                            </select>
+                            <small class="form-text text-muted" id="zipHelp">
+                            We only deliver to these zip codes. If your zip code is not included, give us a call at 254-754-5995 to see if special arrangements can be made.
+                            </small>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col">
+                            <label for="deliveryDate">Delivery or Pickup Date</label>
+                            <input type="date" name="deliveryDate" class="form-control" id="deliveryDate" aria-describedby="dateHelp" min="{% if 'now'|date('H:i:s') > '12:01:00' %}{{ 'now'|date_modify('+1 day')|date('Y-m-d') }}{% else %}{{ 'now'|date('Y-m-d') }}{% endif %}" max="{{ 'now'|date_modify('+3 month')|date('Y-m-d') }}" onchange="(!validity.rangeOverflow||(value=this.getAttribute('max'))) && (!validity.rangeUnderflow||(value=this.getAttribute('min'))) &&
+                            (!validity.stepMismatch||(value=parseInt(this.value))); return validateForm()">
+                            <small class="form-text text-muted" id="dateHelp">
+                            For same day service, you must place your order before 12pm. We are closed on Saturdays and Sundays and will not deliver unless special arrangements are made.
+                            </small>
+                        </div>
+                        <div id="phone" class="col">
+                            <label for="recipientsPhone">Recipients Phone</label>
+                            <input type="text" class="form-control" id="recipientsPhone" aria-describedby="phoneHelp" placeholder="xxx-xxx-xxxx" onchange="return validateForm()">
+                            <small class="form-text text-muted" id="phoneHelp">
+                                just in case the recipient is not home
+                            </small>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col">
+                            <label for="special">Special Instructions</label>
+                            <textarea rows="5" class="form-control" id="special" aria-describedby="specialHelp" onchange="return validateForm()"></textarea>
+                            <small class="form-text text-muted" id="specialHelp">
+                            Any special instructions like gate codes, special directions to house or where they are located at a business.
+                            </small>
+                        </div>
+                        <div class="col">
+                            <label for="enclosureCard">Enclosure Card</label>
+                            <textarea rows="5" class="form-control" id="enclosureCard" aria-describedby="cardHelp" onchange="return validateForm()"></textarea>
+                            <small class="form-text text-muted" id="cardHelp">
+                                Wording for the card. Put "No Card" if you don't want one.
+                            </small>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col">
+                            <label for="deliveryTerms">Delivery Terms</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col">
+                            <input type="checkbox" id="deliveryTerms" onchange="return validateForm()"><label class="pl-2">I agree to the <a href="delivery-terms" class="badge badge-primary" onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scroolbars=yes,resizable=yes,width=800px,height=600px,left=200px,top=200px'); return false;" rel="nofollow">Delivery Terms.</a>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="button" id="okButton" 
+                    class="col-6 btn btn-primary rounded snipcart-add-item"
+                    {% if uri.query == true %}
+                    data-item-id="{{ page.header.product.sku }}{{ uri.query('value') }}"
+                    {% else %}
+                    data-item-id="{{ page.header.product.sku }}"
+                    {% endif %}
+                    data-item-name="{{ page.header.product.name }}"
+                    {% if uri.query == true %}
+                    data-item-price="{{ uri.query('value') }}"
+                    {% else %}
+                    data-item-price="{{ page.header.product.price }}"
+                    {% endif %}
+                    {% if uri.query == true %}
+                    data-item-url="{{ page.url(true) }}?{{ uri.query }}"
+                    {% else %}
+                    data-item-url="{{ page.url(true) }}"
+                    {% endif %}
+                    data-item-description="{{ page.header.product.cartDesc }}"
+                    data-item-stackable="false"
+                    data-item-shippable="false"
+                    data-item-custom1-name="Delivery Date"
+                    data-item-custom1-required="true"
+                    data-item-custom1-value=""
+                    data-item-custom2-name="Delivery/Pickup"
+                    data-item-custom2-required="true"
+                    data-item-custom2-options="Pickup|Delivery[+8.00]"
+                    data-item-custom2-value="Delivery"
+                    data-item-custom3-name="Recipients Name"
+                    data-item-custom3-required="true"
+                    data-item-custom3-value=""
+                    data-item-custom4-name="Recipients Address"
+                    data-item-custom4-value=""
+                    data-item-custom5-name="Recipients City"
+                    data-item-custom5-value=""
+                    data-item-custom6-name="Recipients Zip"
+                    data-item-custom6-value=""
+                    data-item-custom7-name="Recipients Phone"
+                    data-item-custom7-value=""
+                    data-item-custom8-name="Special Instructions"
+                    data-item-custom8-type="textarea"
+                    data-item-custom8-value=""
+                    data-item-custom9-name="Enclosure Card"
+                    data-item-custom9-required="true"
+                    data-item-custom9-type="textarea"
+                    data-item-custom9-value=""
+                    data-item-custom10-name="I agree to the Delivery Terms."
+                    data-item-custom10-required="true"
+                    data-item-custom10-type="checkbox"
+                    data-item-custom10-value="true" aria-describedby="cartHelp" disabled
+                    >Add To Cart</button>
+                    <small class="form-text text-danger" id="cartHelp">
+                        Add to cart is disabled until all required fields are filled out.
+                    </small>
+                      </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+	   {{ page.content }}
+        </div>
+    </div>
+{% endblock %}

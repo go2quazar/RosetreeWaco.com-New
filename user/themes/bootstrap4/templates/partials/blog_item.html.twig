@@ -1,0 +1,105 @@
+<div class="list-item">
+
+    {% set header_image = page.header.header_image|defined(true) %}
+    {% set header_image_width  = page.header.header_image_width|defined(900) %}
+    {% set header_image_height = page.header.header_image_height|defined(300) %}
+    {% set header_image_file = page.header.header_image_file %}
+
+    <div class="list-blog-header">
+
+        {% if page.header.link %}
+            <h3 class="blog-heading handwritten">
+                {% if page.header.continue_link is not sameas(false) %}
+                    <a href="{{ page.url }}"><i class="fa fa-angle-double-right"></i></a>
+                {% endif %}
+                <a href="{{ page.header.link }}">{{ page.title }}</a>
+            </h3>
+        {% else %}
+            <h3 class="blog-heading handwritten h1"><a class="my-text-primary" href="{{ page.url }}">{{ page.title }}</a></h3>
+        {% endif %}
+
+        <div class="list-blog-meta my-3">
+            <span class="list-blog-date">
+                <span class="font-italic">{{ page.date|date("F j, Y") }}</span> - {{ page.header.location }}
+            </span>
+
+            {% if page.taxonomy.tag %}
+            <span class="list-blog-tags float-right">
+                {% for tag in page.taxonomy.tag %}
+                    <a class="badge badge-primary" href="{{ blog.url }}/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a>
+                {% endfor %}
+            </span>
+            {% endif %}
+        </div>
+
+            
+    </div>
+
+    <div class="list-blog-padding">
+
+        {% if page.header.continue_link is sameas(false) %}
+        {{ page.media.images|first.cropZoom(1150,300).html('','blog-header-image') }}
+            <p>{{ page.content }}</p>
+            {% if not truncate %}
+            {% set show_prev_next = true %}
+            {% endif %}
+        {% elseif truncate and page.summary != page.content %}
+        {{ page.media.images|first.cropZoom(1150,300).html('','blog-header-image') }}
+            <p>{{ page.summary }}</p>
+            <p><a class="continue" href="{{ page.url }}">Continue Reading...</a></p>
+        {% elseif truncate %}
+        {{ page.media.images|first.cropZoom(1150,300).html('','blog-header-image') }}
+            {% if page.summary != page.content %}
+                <p>{{ page.content|truncate(550) }}</p>
+            {% else %}
+                <p>{{ page.content }}</p>
+            {% endif %}
+            <p><a href="{{ page.url }}">Continue Reading...</a></p>
+        {% else %}
+            {% if header_image %}
+                {% if header_image_file %}
+                    {% set header_image_media = page.media.images[header_image_file] %}
+                {% else %}
+                    {% set header_image_media = page.media.images|first %}
+                {% endif %}
+                {{ header_image_media.cropZoom(header_image_width, header_image_height).html }}
+            {% endif %}
+            {% if page.taxonomy.color %}
+            <div id="wColor">
+                {% for color in page.taxonomy.color %}
+                    <a id="wColor" class="badge rounded-circle border border-secondary" data-toggle="tooltip" title="{{ color }}" style="background-color: {{ color }}" href="{{ blog.url }}/color{{ config.system.param_sep }}{{ color }}"><span class="p-1"></span></a>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <p>{{ page.content }}</p>
+            <div class="gallery-container {{ page.header.class }}">
+                    {{ unite_gallery(page.media.images|slice(1), '{"gallery_theme":"' ~ page.header.unitegallery.gallery_theme ~ '", "tiles_type":"justified", "tiles_justified_row_height":"300"}') }}
+            </div>
+            <br />
+            {% if page.header.taxonomy.vendor != null %}
+            <h3 class="blog-heading handwritten">Vendors</h3>
+                <ul class="vendor-list">
+                {% for vendor in page.header.taxonomy.vendor %}
+                    <li>
+                        {{ vendor }}
+                    </li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+            {% set show_prev_next = true %}
+            {% endif %}
+
+                {% if show_prev_next %}
+            <p class="text-center mt-4">
+                {% if not page.isFirst %}
+                    <a class="btn btn-primary" href="{{ page.nextSibling.url }}"><i class="fa fa-chevron-left"></i> Next Post</a>
+                {% endif %}
+
+                {% if not page.isLast %}
+                    <a class="btn btn-primary" href="{{ page.prevSibling.url }}">Previous Post <i class="fa fa-chevron-right"></i></a>
+                {% endif %}
+            </p>
+        {% endif %}
+
+    </div>
+</div>

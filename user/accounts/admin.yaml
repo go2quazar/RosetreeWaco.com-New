@@ -1,0 +1,11 @@
+email: kelly@rosetreewaco.com
+fullname: 'Kelly Jones'
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$WKNc2hqBM//r0LTfKwG3leP8o1fgrzPYZRyKbMwrdBnC/S9kymyNG

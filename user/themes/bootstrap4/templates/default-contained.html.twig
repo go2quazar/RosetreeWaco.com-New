@@ -1,0 +1,12 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+     <div class="main-content">
+         <div class="container">
+           {% if config.plugins.breadcrumbs.enabled and page.header.breadoff == false %}
+               {% include 'partials/breadcrumbs.html.twig' %}
+           {% endif %}
+	   {{ page.content }}
+        </div>
+    </div>
+{% endblock %}

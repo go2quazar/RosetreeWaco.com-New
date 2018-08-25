@@ -1,0 +1,19 @@
+title: 'Rosetree Floral Design'
+default_lang: en
+author:
+  name: 'Kelly Jones'
+  email: info@rosetreewaco.com
+taxonomies:
+  - category
+  - tag
+  - vendor
+  - color
+metadata:
+  description: 'Natural and Unique Flowers for Weddings, Events and any Occasion. High quality flowers like garden roses, peonies and ranunculus.'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+blog:
+  route: /blog

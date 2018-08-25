@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="{{ grav.language.getLanguage ?: 'en' }}">
+    <head>
+        {% block head %}
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {% include 'partials/metadata.html.twig' %}
+
+        <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+        <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png', true) }}" />
+
+        {% block stylesheets %}
+            {% do assets.add('theme://css-compiled/theme.css',101) %}
+        {% endblock %}
+        {{ assets.css() }}
+
+        {% block javascripts %}
+        {% do assets.add('theme://js/jquery-2.2.2.min.js',102) %}
+        <script type="text/javascript">
+            if (navigator.userAgent.indexOf("MSIE") >= 0) {
+                window.location.replace("/includes/unsupported-browser");
+            }
+        </script>
+        <script id="snipcart" data-api-key="YjVmODQzMmYtYjQwOS00NGZkLThmZWQtNmRkYzhkMWY4MTIzNjM2Njc1NTk4MDA3NDU3MDQ2" src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" defer></script>
+        {% if page.url|contains('/shop/') or page.url|contains('/blog') %}
+        {% do assets.add('theme://js/URI.js',100,{group:'bottom'}) %}
+        {% endif %}
+        {% do assets.add('theme://js/site.js', {group:'bottom'}) %}
+        {% if page.header.unitegallery.gallery_theme != null %}
+            {{ assets.js('ugallery') }}
+        {% endif %}
+        {% endblock %}
+        {{ assets.js() }}
+        {% endblock head %}
+    </head>
+
+    <body class="{% block body_classes %}{{ page.header.body_classes }}{% endblock %}">
+        {% if config.plugins.langswitcher.enabled %}
+            {% include 'partials/langswitcher.html.twig' %}
+        {% endif %}
+
+        {% block header_navigation %}
+            {% include 'partials/navigation.html.twig' %}
+        {% endblock %}
+	
+        {% block content %}{% endblock %}
+        {% block pagination %}{% endblock %}
+
+        {% block bottom %}
+	    {% include 'partials/footer.html.twig' %}
+        {% if page.url|contains('/shop/') %}
+        <script>
+        function validateForm() {
+        // Get query from url
+        const price = URI(document.URL).query(true);
+        const pp = document.getElementById('price'); 
+        const p = document.getElementById("okButton");
+        const d = document.getElementById("deliveryDate");
+        const pickup = document.getElementById("pickup");
+        const delivery = document.getElementById("delivery");
+        const address = document.getElementById("address");
+        const city = document.getElementById("city");
+        const zip = document.getElementById("zip");
+        const phone = document.getElementById("phone");
+        const name = document.getElementById("recipientsName");
+        const recipientsAddress = document.getElementById("recipientsAddress");
+        const recipientsCity = document.getElementById("recipientsCity");
+        const recipientsZip = document.getElementById("recipientsZip");
+        const recipientsPhone = document.getElementById("recipientsPhone");
+        const enclosureCard = document.getElementById("enclosureCard");
+        const special = document.getElementById("special");
+        const card = document.getElementById("cardHelp");
+        const form = document.forms["productForm"];
+        const re = /^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
+        const nameLabel = document.getElementById("nameLabel");
+        const nameHelp = document.getElementById("nameHelp");
+        const fields = [address, city, zip, phone];
+        const dataFields = [d, name, recipientsAddress, recipientsCity, recipientsZip, recipientsPhone, special, enclosureCard];
+    {% if page.header.product.setyourprice %}
+        const phoneValue = form.elements[8].value;
+    // url query? then update price 
+    if (document.URL.includes("?")) {
+        pp.setAttribute("value", price['value']);
+    }
+    // set null price to minimum price
+    if (pp.value == "") {
+        pp.value = pp.getAttribute("min");
+    }
+    // set price with decimal to no decimal
+    if (pp.value.indexOf(".")!=-1) {
+        pp.value = Math.round(pp.value);
+    }
+    // set price to entered price in form, update without duplication
+    p.setAttribute("data-item-price", pp.value);
+    p.setAttribute("data-item-id", p.getAttribute("data-item-id").split(/\d/)[0]+ pp.value);
+    // update cart url to match data in form
+    if (window.location.href.includes('?')) {
+        p.setAttribute("data-item-url", window.location.href.split('?')[0]+"?value="+ pp.value);
+    } else if (window.location.href.includes('#')) {
+        p.setAttribute("data-item-url", window.location.href.split('#')[0]+"?value="+ pp.value);
+    } else {
+    p.setAttribute("data-item-url", window.location.href+"?value="+ pp.value);
+    }
+    // remove inputs if pickup is selected
+    if (pickup.checked != 0) {
+        if (form.elements[3].value == ""||form.elements[7].value == ""||form.elements[9].value == ""||form.elements[10].value == ""||form.elements[11].checked != 1) {
+            p.disabled = true;
+        }
+        for (i = 0; i < fields.length; i++) {
+        fields[i].classList.add("d-none");
+        }
+        card.innerHTML = 'Wording for the card. Put "No Card" if you don\'t want one or "Blank Card" if you would like to write it yourself.';
+        nameLabel.innerHTML = "Pickup Name"
+        nameHelp.innerHTML = "Put the name of the person who will be picking up the order."
+        p.setAttribute("data-item-custom2-value", "Pickup");
+        if (form.elements[3].value !== ""&&form.elements[7].value !== ""&&form.elements[10].value !== ""&&form.elements[11].checked != 0) {
+                p.removeAttribute("disabled")
+            }
+    } else if (delivery.checked != 0) {
+        if (form.elements[3].value == ""||form.elements[7].value == ""||form.elements[7].value == "//"||form.elements[10].value == ""||form.elements[11].checked != 1||form.elements[4].value == ""||form.elements[5].value == ""||form.elements[6].value == ""||form.elements[8].value == "") {
+            p.disabled = true;
+        }
+        for (i = 0; i < fields.length; i++) {
+        fields[i].classList.remove("d-none");
+        }
+        card.innerHTML = 'Wording for the card. Put "No Card" if you don\'t want one.'
+        nameLabel.innerHTML = "Recipents Name"
+        nameHelp.innerHTML = ""
+        p.setAttribute("data-item-custom2-value", "Delivery");
+        if (form.elements[3].value !== ""&&form.elements[4].value !== ""&&form.elements[5].value !== ""&&form.elements[6].value !== ""&&form.elements[7].value !== ""&&re.test(phoneValue)&&form.elements[10].value !== ""&&form.elements[11].checked != 0) {
+                p.removeAttribute("disabled")
+            }
+    }
+    {% else %}
+    const phoneValue = form.elements[7].value;
+     // remove inputs if pickup is selected
+    if (pickup.checked != 0) {
+        if (form.elements[2].value == ""||form.elements[6].value == ""||form.elements[8].value == ""||form.elements[9].value == ""||form.elements[10].checked != 1) {
+            p.disabled = true;
+        }
+        for (i = 0; i < fields.length; i++) {
+        fields[i].classList.add("d-none");
+        }
+        card.innerHTML = 'Wording for the card. Put "No Card" if you don\'t want one or "Blank Card" if you would like to write it yourself.';
+        nameLabel.innerHTML = "Pickup Name"
+        nameHelp.innerHTML = "Put the name of the person who will be picking up the order."
+        p.setAttribute("data-item-custom2-value", "Pickup");
+        if (form.elements[2].value !== ""&&form.elements[6].value !== ""&&form.elements[9].value !== ""&&form.elements[10].checked != 0) {
+                p.removeAttribute("disabled")
+            }
+    } else if (delivery.checked != 0) {
+        if (form.elements[2].value == ""||form.elements[6].value == ""||form.elements[6].value == "//"||form.elements[9].value == ""||form.elements[10].checked != 1||form.elements[3].value == ""||form.elements[4].value == ""||form.elements[5].value == ""||form.elements[7].value == "") {
+            p.disabled = true;
+        }
+        for (i = 0; i < fields.length; i++) {
+        fields[i].classList.remove("d-none");
+        }
+        card.innerHTML = 'Wording for the card. Put "No Card" if you don\'t want one.'
+        nameLabel.innerHTML = "Recipents Name"
+        nameHelp.innerHTML = ""
+        p.setAttribute("data-item-custom2-value", "Delivery");
+        if (form.elements[2].value !== ""&&form.elements[3].value !== ""&&form.elements[4].value !== ""&&form.elements[5].value !== ""&&form.elements[6].value !== ""&&re.test(phoneValue)&&form.elements[9].value !== ""&&form.elements[10].checked != 0) {
+                p.removeAttribute("disabled")
+            }
+    }
+    {% endif %}
+    // set fields to whats entered in form
+    for (i = 0; i < dataFields.length; i++) {
+        if (dataFields[i] != null) {
+            p.setAttribute("data-item-custom3-value", name.value);
+            p.setAttribute("data-item-custom4-value", recipientsAddress.value);
+            p.setAttribute("data-item-custom5-value", recipientsCity.value);
+            p.setAttribute("data-item-custom6-value", recipientsZip.value);
+            p.setAttribute("data-item-custom1-value", d.value.slice(5,7) + "/" + d.value.slice(8,10) + "/" + d.value.slice(0,4));
+            p.setAttribute("data-item-custom7-value", recipientsPhone.value);
+            p.setAttribute("data-item-custom8-value", special.value);
+            p.setAttribute("data-item-custom9-value", enclosureCard.value);
+        }
+    }
+};
+</script>
+            {% endif %}
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            <noscript id="deferred-styles">
+              <link rel="stylesheet" type="text/css" href="user/plugins/vimeo/css/vimeo.css"/>
+              <link rel="stylesheet" type="text/css" href="user/plugins/unitegallery/vendor/unitegallery/css/unite-gallery.min.css"/>
+            </noscript>
+            <script>
+              var loadDeferredStyles = function() {
+                var addStylesNode = document.getElementById("deferred-styles");
+                var replacement = document.createElement("div");
+                replacement.innerHTML = addStylesNode.textContent;
+                document.body.appendChild(replacement)
+                addStylesNode.parentElement.removeChild(addStylesNode);
+              };
+              var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+                  window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+              if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+              else window.addEventListener('load', loadDeferredStyles);
+            </script>
+            {{ assets.js('bottom') }}
+        {% endblock %}
+    </body>
+</html>

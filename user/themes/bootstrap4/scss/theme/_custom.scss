@@ -1,0 +1,191 @@
+ul.contact-form {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.card-img-mobile.card {
+  border: none;
+}
+
+.card-img-mobile > div > div > img {
+    width: 300px;
+  }
+
+@media (max-width: 768px) {
+.card-img-mobile > div > div > img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Styles for Date Picker
+
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button { 
+    display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #6c983f;
+}
+
+.breadcrumb {
+  padding: 0 !important;
+}
+
+.product:hover {
+	border: 1px solid #6c983f !important;
+}	
+
+.btn-primary {
+	background-color: #6c983f !important;
+	border-color: #6c983f !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    background-color: #a9ca38 !important;
+    border-color: #a9ca38 !important;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(206,239,69,.5) !important;
+}
+
+.btn-secondary {
+  background-color: #4b4743 !important;
+  border-color: #4b4743 !important;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .open>.dropdown-toggle.btn-secondary {
+    background-color: #605b58 !important;
+    border-color: #605b58 !important;
+}
+
+.btn-secondary:focus, .btn-secondary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(145,139,134,.5) !important;
+}
+
+.badge-primary {
+  background-color: #6c983f !important;
+  border-color: #6c983f !important;
+}
+
+.badge-primary:hover, .badge-primary:focus, .badge-primary:active, .badge-primary.active, .open>.dropdown-toggle.badge-primary {
+    background-color: #a9ca38 !important;
+    border-color: #a9ca38 !important;
+}
+
+.badge-secondary {
+  background-color: #4b4743 !important;
+  border-color: #4b4743 !important;
+}
+
+.badge-secondary:hover, .badge-secondary:focus, .badge-secondary:active, .badge-secondary.active, .open>.dropdown-toggle.badge-secondary {
+    background-color: #605b58 !important;
+    border-color: #605b58 !important;
+}
+
+.breadcrumb a {
+  color: #6c983f !important;
+}
+
+.my-text-primary {
+  color: #4b4743 !important;
+}
+
+.my-text-secondary {
+  color: #6c983f !important;
+}
+
+footer.foot {
+	background-color: rgb(123, 166, 84);
+	color: #fff;
+	padding-top: 30px;
+}
+
+/// Font
+
+.heading {
+	font-family: 'Cuprum', sans-serif !important;
+}
+
+.handwritten {
+	font-family: 'Kaushan Script', cursive !important;
+}
+
+/// Parallax
+
+* {
+  box-sizing: border-box;
+}
+/// Placeholders 
+%parallax-image {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+}
+%split-box {
+  width:100%;
+}
+///Container that holds the images
+.parallax {
+  @extend %parallax-image;
+  &:nth-child(1){
+    justify-content:center;
+    align-items:center;
+    display:flex;
+  }
+  &:nth-child(3){
+    background-image: url("images/sea-of-flowers.jpg");
+    justify-content:center;
+    align-items:center;
+    display:flex;
+  }
+  &:nth-child(5){
+    background-image: url("images/beautiful-venues.jpg");
+    justify-content:center;
+    align-items:center;
+    display:flex;
+  }
+  &:nth-child(7){
+    background-image: url("images/wedding-celebration.jpg");
+    justify-content:center;
+    align-items:center;
+    display:flex;
+  }
+}
+/// The white splitting containers which enhances the illusion.
+.box {
+  @extend %split-box;
+}
+
+.dark-box {
+	margin: 10rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: rgb(255, 255, 255);
+}
+
+.dark-box-sm {
+        margin: 2rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: rgb(255, 255, 255);
+}
+
+#map_container{
+  position: relative;
+}
+#map{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 22.25%;
+    padding-top: 30px;
+    position: relative;
+}
