@@ -1,4 +1,0 @@
-<div class="modular-row gallery-container {{ page.header.class }}">
-	{{ unite_gallery(page.media.images, '{"gallery_theme":"slider", "gallery_width":"100%", "sm":"true", "grav_gallery_div_id":"gallery1"}') }}
-        {{ unite_gallery(page.media.images, '{"gallery_theme":"tile", "grav_gallery_div_id":"gallery2"}') }}
-</div>
